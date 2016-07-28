@@ -1,6 +1,6 @@
 # corpusDenominator
 
-This is a small program written to bring corpora in the same language but in different orthographies to common orthographic denominator. It creates a “deformed” but orthographically uniform corpus for stylometric analysis with `R` ()
+This is a small program written to bring corpora in the same language but in different orthographies to common orthographic denominator. It creates a “deformed” but orthographically uniform corpus for stylometric analysis with `R` ((https://github.com/computationalstylistics/stylo)[https://github.com/computationalstylistics/stylo]).
 
 # Parameters in `corpusDenominator.py`
 ```
