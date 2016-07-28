@@ -31,7 +31,7 @@ def dictReplace(text, dic):
 
 def dictReplaceRE(text, dic):
     for k, v in dic.items():
-        text = re.sub(r"%s" % k, "%s" % v, text)
+        text = re.sub(r"%s" % k.strip(), "%s" % v.strip(), text)
     return(text)
 
 def converter(sFolder, fileName, conversionScheme):
@@ -43,7 +43,7 @@ def converter(sFolder, fileName, conversionScheme):
         if key == "PLAIN":
             tMod = dictReplace(text, conversionScheme)
 
-        with open(folderMod+fileName, "w", encoding="utf8") as f9:
+        with open(folderMod+fileName.split(".")[0]+".txt", "w", encoding="utf8") as f9:
             f9.write(tMod)
             
         print("\tFile %s has been converted..." % fileName)
